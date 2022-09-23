@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PDC60_MOD02.View.PageView1">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
-
+            
             <Label Text="Student ID"/>
             <Label Text="{Binding StudentInfo.StudentID}" FontSize="36"/>
             <Entry Text="{Binding sID}" Placeholder="Student ID"/>
@@ -13,9 +14,26 @@
             <Label Text="{Binding StudentInfo.StudentName}" FontSize="36"/>
             <Entry Text="{Binding Sname}" Placeholder="Student Name"/>
 
+            <Label Text="Student Year Level"/>
+            <Label Text="{Binding StudentInfo.YearLevel}" FontSize="36"/>
+            <Entry Text="{Binding sLevel}" Placeholder="Student Year Level"/>
+
+                <Label Text="Student Section"/>
+            <Label Text="{Binding StudentInfo.Section}" FontSize="36"/>
+            <Entry Text="{Binding sSection}" Placeholder="Student Section"/>
+
+            <Label Text="Student Course Code"/>
+            <Label Text="{Binding StudentInfo.CourseCode}" FontSize="36"/>
+            <Entry Text="{Binding sCourseCode}" Placeholder="Student Course Code"/>
+
+            <Label Text="Student Course"/>
+            <Label Text="{Binding StudentInfo.Course}" FontSize="36"/>
+            <Entry Text="{Binding sCourse}" Placeholder="Student Course"/>
+
             <Button Text="Update" Command="{Binding CommandInformationUpdate}"/>
             
 
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

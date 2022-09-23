@@ -6,6 +6,7 @@ using PDC60_MOD02.Model;
 
 
 using Xamarin.Forms;
+using static System.Collections.Specialized.BitVector32;
 
 namespace PDC60_MOD02.View_Model
 {
@@ -16,6 +17,12 @@ namespace PDC60_MOD02.View_Model
 
         public int sID { get; set; }
         public string Sname { get; set; }
+        public int sLevel { get; set; }
+        public string sSection { get; set; }
+   
+        public string sCourseCode { get; set; }
+        public string sCourse { get; set; }
+
 
         public StudentInformationViewModel()
         {
@@ -24,7 +31,11 @@ namespace PDC60_MOD02.View_Model
                 StudentInfo = new StudentInformation
                 {
                     StudentID = sID,
-                    StudentName = Sname
+                    StudentName = Sname,
+                    YearLevel = sLevel,
+                    Section = sSection,
+                    CourseCode = sCourseCode,
+                    Course = sCourse
                 };
                 OnPropertyChanged(nameof(StudentInfo));
             });

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PDC60_MOD02.View_Model;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,6 +16,7 @@ namespace PDC60_MOD02.View
         public PageView1()
         {
             InitializeComponent();
+            BindingContext = new StudentInformationViewModel();
         }
     }
 }

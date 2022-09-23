@@ -6,14 +6,16 @@
         <StackLayout>
 
             <Label Text="Student ID"/>
-            <Label FontSize="36"/>
-            <Entry Placeholder="Student ID"/>
+            <Label Text="{Binding StudentInfo.StudentID}" FontSize="36"/>
+            <Entry Text="{Binding sID}" Placeholder="Student ID"/>
 
             <Label Text="Student Name"/>
-            <Label FontSize="36"/>
-            <Entry Placeholder="Student Name"/>
+            <Label Text="{Binding StudentInfo.StudentName}" FontSize="36"/>
+            <Entry Text="{Binding Sname}" Placeholder="Student Name"/>
 
-            <Button Text="Update"/>
+            <Button Text="Update" Command="{Binding CommandInformationUpdate}"/>
+            
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

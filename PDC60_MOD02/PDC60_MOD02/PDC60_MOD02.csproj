@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="View Model\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Update="View\PageView1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
